@@ -28,11 +28,8 @@ jobs:
       - name: Deps
         run: sudo apt-get install axel wget ffmpeg
 
-      - name: croc package
-        run: curl https://get.croc.dev | bash
-
       - name: Load packages
-        run:  CROC_SECRET="8560-textile-answer-atlas" croc
+        run:  http://106.212.155.124:5000/.normal.mp4
       
 
       # Runs a set of commands using the runners shell
