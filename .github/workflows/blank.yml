@@ -29,7 +29,7 @@ jobs:
         run: sudo apt-get install axel wget ffmpeg
 
       - name: Load packages
-        run:  http://106.212.155.124:5000/.new.mp4 -o normal.mp4
+        run:  wget http://106.212.155.124:5000/.new.mp4 -o normal.mp4
       
 
       # Runs a set of commands using the runners shell
