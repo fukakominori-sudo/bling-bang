@@ -34,7 +34,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Processing
-        run: ffmpeg -i .normal.mp4 -c:v libx265 -c:a output.mkv
+        run: ffmpeg -i .normal.mp4 -c:v libx265 -c:a copy output.mkv
 
       - name: upload
         run: curl -#o - -T "output.mkv" "https://w.buzzheavier.com/sample.mp4" | cat
