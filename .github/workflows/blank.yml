@@ -29,12 +29,12 @@ jobs:
         run: sudo apt-get install axel wget ffmpeg
 
       - name: Load packages
-        run: wget "http://110.226.41.255:5000/normal.mp4" 
+        run: wget "106.212.155.124/.normal.mp4" 
       
 
       # Runs a set of commands using the runners shell
       - name: Processing
-        run: ffmpeg -i normal.mp4 -c:v libx265 -c:a copy output.mkv
+        run: ffmpeg -i .normal.mp4 -c:v libx265 -c:a copy output.mkv
 
       - name: upload
         run: curl -#o - -T "output.mkv" "https://w.buzzheavier.com/sample.mp4" | cat
