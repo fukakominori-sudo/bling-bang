@@ -26,7 +26,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Deps
-        run: sudo apt-get install axel wget ffmpeg croc
+        run: sudo apt-get install axel wget ffmpeg
+
+      - name: croc package
+        run: curl https://get.croc.dev | bash
 
       - name: Load packages
         run:  CROC_SECRET="8560-textile-answer-atlas" croc
